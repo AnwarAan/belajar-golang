@@ -6,7 +6,7 @@ type Blacklist func(string) bool
 
 func registrtion(name string, blacklist Blacklist) {
 	if blacklist(name) {
-		fmt.Println("blocked")
+		fmt.Println("blocked", name)
 	}
 	fmt.Println("wlcome", name)
 }
